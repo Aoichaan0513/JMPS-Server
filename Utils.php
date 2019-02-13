@@ -30,6 +30,10 @@
         return '{"result": false, "reason": "API key or server could not be found."}';
     }
 
+    function formatStamp($i) {
+        return $i + 4;
+    }
+
     function makeRandStr($length) {
         $str = array_merge(range('a', 'z'), range('0', '9'), range('A', 'Z'));
         $r_str = null;
